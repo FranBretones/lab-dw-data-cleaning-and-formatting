@@ -105,3 +105,5 @@ def clean_dataframe(df):
     print(f"• Columnas estandarizadas: {resumen['standardized_columns']}")
     print(f"• Transformación en 'number_of_open_complaints': {resumen['number_of_open_complaints_transformed']}")
     print(f"• Duplicados eliminados: {resumen['duplicates_removed']}")
+    
+    return df.reset_index(drop=True)
